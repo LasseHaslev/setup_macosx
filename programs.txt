@@ -1,0 +1,26 @@
+[ ] Git
+[ ] NPM
+[ ] VLC
+[ ] Dash
+[ ] Moom
+[ ] Skype
+[ ] Chrome
+[ ] iTerm2
+[ ] Alfred2
+[ ] Dropbox
+[ ] Spotify
+// Homestead
+[ ] Caffeine
+[ ] Mindnode
+[ ] Transmit
+[ ] 1Password
+[ ] SequelPro
+[ ] LiveReload
+[ ] RescueTime
+[ ] VirtualBox
+[ ] Wunderlist
+[ ] Graphviz (Dot)
+[ ] Adium (Mesanger)
+[ ] Homebrew (Installer)
+[ ] Textwrangler (AppStore)
+https://laravel.com/docs/{Version}/homestead
