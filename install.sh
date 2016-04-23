@@ -53,9 +53,6 @@ brew cask install textwrangler # Texteditor with GREP posibilities
 git clone -b personal https://github.com/LasseHaslev/ultimate-vimrc.git ~/.vim/runtime
 sh ~/.vim/runtime/install.sh
 
-# Setup "oh my zsh"
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-
 # Add homestead
 vagrant box add laravel/homestead
 cd ~
@@ -63,3 +60,6 @@ git clone https://github.com/laravel/homestead.git Homestead
 cd ~/Homestead
 bash ./init.sh
 cd ~
+
+# Setup "oh my zsh" last because it will cancel the process when its done
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
