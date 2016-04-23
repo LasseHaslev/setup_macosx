@@ -27,27 +27,27 @@ brew cask install spotify # Music streaming
 brew cask install dropbox # SkyDrive file manager
 
 brew cask install dash # Gode documentation
-brew cask iterm2 # A better terminal for Mac
-brew cask alfred # A better terminal for Mac
-brew cask caffeine # Prevent mac from sleeping
+brew cask install iterm2 # A better terminal for Mac
+brew cask install alfred # A better terminal for Mac
+brew cask install caffeine # Prevent mac from sleeping
 
-brew cask vagrant # Virtual mashine
-brew cask virtualbox # Prevent mac from sleeping
+brew cask install vagrant # Virtual mashine
+brew cask install virtualbox # Prevent mac from sleeping
 
-brew cask slack # Team communication
-brew cask 1password # Password manager
+brew cask install slack # Team communication
+brew cask install 1password # Password manager
 
-brew cask mindnode-pro # Mind mapping software
-brew cask macvim # VIM Text editor for mac
-brew cask moom # Mac window organization
+brew cask install mindnode-pro # Mind mapping software
+brew cask install macvim # VIM Text editor for mac
+brew cask install moom # Mac window organization
 
-brew cask transmit # FTP client
+brew cask install transmit # FTP client
 
-brew cask sequel-pro # Graphical SQL client
-brew cask livereload # Reloads browser when you change your files developing web apps
-brew cask rescuetime # Monitor your activities
-brew cask graphviz # Write graphs in dot
-brew cask textwrangler # Texteditor with GREP posibilities
+brew cask install sequel-pro # Graphical SQL client
+brew cask install livereload # Reloads browser when you change your files developing web apps
+brew cask install rescuetime # Monitor your activities
+brew cask install graphviz # Write graphs in dot
+brew cask install textwrangler # Texteditor with GREP posibilities
 
 # Setup vim rc file
 git clone -b personal https://github.com/LasseHaslev/ultimate-vimrc.git ~/.vim/runtime
