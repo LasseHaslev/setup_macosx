@@ -15,6 +15,9 @@ brew install caskroom/cask/brew-cask
 brew install git # Git repositories
 brew install npm # Package manager for javascript
 
+brew install wget # Install wget
+brew install tree # quickly view folder structure in terminal
+
 brew cask install google-chrome # Web browser
 brew cask install adium # Communication software
 brew cask install skype # Communication software
@@ -49,3 +52,6 @@ brew cask textwrangler # Texteditor with GREP posibilities
 # Setup vim rc file
 git clone -b personal https://github.com/LasseHaslev/ultimate-vimrc.git ~/.vim/runtime
 sh ~/.vim/runtime/install.sh
+
+# Setup "oh my zsh"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
