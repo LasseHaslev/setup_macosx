@@ -48,6 +48,7 @@ brew cask install livereload # Reloads browser when you change your files develo
 brew cask install rescuetime # Monitor your activities
 brew cask install graphviz # Write graphs in dot
 brew cask install textwrangler # Texteditor with GREP posibilities
+brew cask install nylas-n1 # Mail client
 
 # Setup vim rc file
 git clone -b personal https://github.com/LasseHaslev/ultimate-vimrc.git ~/.vim/runtime
