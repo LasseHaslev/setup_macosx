@@ -62,5 +62,8 @@ cd ~/Homestead
 bash ./init.sh
 cd ~
 
+# A fun little detail when the script has been finished
+say -v whisper "It has been done"
+
 # Setup "oh my zsh" last because it will cancel the process when its done
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
