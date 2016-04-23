@@ -58,3 +58,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 
 # Add homestead
 vagrant box add laravel/homestead
+cd ~
+git clone https://github.com/laravel/homestead.git Homestead
+cd ~/Homestead
+bash ./init.sh
