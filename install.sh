@@ -19,7 +19,7 @@ brew install wget # Install wget
 brew install tree # quickly view folder structure in terminal
 
 brew cask install google-chrome # Web browser
-brew cask install adium # Communication software
+brew cask install franz # Social messenger software
 brew cask install skype # Communication software
 brew cask install reeder # News reader
 brew cask install vlc # Video player
