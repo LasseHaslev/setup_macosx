@@ -15,7 +15,7 @@ I am using dropbox and gdrive for files, and git for all my projects. so step 1 
 
 Run
 ```bash -c "$(curl -fsSL https://raw.githubusercontent.com/LasseHaslev/setup_macosx/master/install.sh)"```
-Just sit back and watch your fresh install of macosx is beeng filled with your awsome programs. Just stick around your mack in case you have to interact with the script (password, paths and such). 
+Just sit back and watch your fresh install of macosx is beeng filled with your awsome programs. Just stick around your mac in case you have to interact with the script (password, paths and such). 
 
 ## Contributors
 - [Jonas Knarbakk](https://github.com/JonasKnarbakk) see his Linux version [here.](https://github.com/JonasKnarbakk/LinuxSetup)
