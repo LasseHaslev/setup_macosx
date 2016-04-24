@@ -54,6 +54,11 @@ brew cask install nylas-n1 # Mail client
 git clone -b personal https://github.com/LasseHaslev/ultimate-vimrc.git ~/.vim/runtime
 sh ~/.vim/runtime/install.sh
 
+# Install npm Dependencies
+npm install --global gulp-cli # Javascript task manager
+brew install ctags # Brows like a pro with ctags
+brew install the_silver_searcher # Searching with ag
+
 # Add homestead
 vagrant box add laravel/homestead
 cd ~
