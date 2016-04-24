@@ -14,7 +14,7 @@ I am using dropbox and gdrive for files, and git for all my projects. so step 1 
 ## Installation
 
 Run
-```bash -c "$(curl -fsSL https://raw.githubusercontent.com/LasseHaslev/setup_macosx/master/install.sh)"```
+```bash -c "$(curl -fsSL https://raw.githubusercontent.com/LasseHaslev/setup_macosx/normal_install/install.sh)"```
 Just sit back and watch your fresh install of macosx is beeng filled with your awsome programs. Just stick around your mac in case you have to interact with the script (password, paths and such). 
 
 ## Contributors
