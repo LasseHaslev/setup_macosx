@@ -1,7 +1,8 @@
 #!/bin/sh
 
 # Generate the ssh key
-ssh-keygen -t rsa
+echo "We need your email to generate a ssh-key"; read email;
+ssh-keygen -t rsa -b 4096 -C $email
 
 # --- Install Programs --- #
 # Setup homebrew
