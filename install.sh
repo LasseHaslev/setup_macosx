@@ -4,6 +4,10 @@
 echo "We need your email to generate a ssh-key"; read email;
 ssh-keygen -t rsa -b 4096 -C $email
 
+# Adding your SSH key to the ssh-agent
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_rsa
+
 # --- Install Programs --- #
 # Setup homebrew
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
