@@ -1,7 +1,12 @@
 #!/bin/sh
 
+# Ask for variables to use in this process
+echo "Ok, to make this process alot easier, answer these questions:\nWhat is your name?"
+read name;
+echo "What is your email address?"
+read email;
+
 # Generate the ssh key
-echo "We need your email to generate a ssh-key"; read email;
 ssh-keygen -t rsa -b 4096 -C $email
 
 # Adding your SSH key to the ssh-agent
@@ -55,6 +60,8 @@ brew cask install graphviz # Write graphs in dot
 brew cask install textwrangler # Texteditor with GREP posibilities
 brew cask install nylas-n1 # Mail client
 
+brew cask install seil # Keymapper for mac
+
 # Setup vim rc file
 git clone -b personal https://github.com/LasseHaslev/ultimate-vimrc.git ~/.vim/runtime
 sh ~/.vim/runtime/install.sh
@@ -63,6 +70,11 @@ sh ~/.vim/runtime/install.sh
 npm install --global gulp-cli # Javascript task manager
 brew install ctags # Brows like a pro with ctags
 brew install the_silver_searcher # Searching with ag
+
+# Setup git
+git config --global user.name $name
+git config --global user.email $email
+git config --global credential.helper osxkeychain # Tell Git to use sxkeychain helper using the global credential.helper config
 
 # Add homestead
 vagrant box add laravel/homestead
