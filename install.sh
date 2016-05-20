@@ -12,7 +12,6 @@ brew install caskroom/cask/brew-cask
 brew cask install google-chrome # Web browser
 brew cask install franz # Social messenger software
 brew cask install skype # Communication software
-brew cask install reeder # News reader
 brew cask install vlc # Video player
 brew cask install spotify # Music streaming
 brew cask install dropbox # SkyDrive file manager
@@ -22,10 +21,8 @@ brew cask install caffeine # Prevent mac from sleeping
 
 brew cask install 1password # Password manager
 
-brew cask install mindnode-pro # Mind mapping software
 brew cask install moom # Mac window organization
 
-brew cask install textwrangler # Texteditor with GREP posibilities
 brew cask install nylas-n1 # Mail client
 
 # A fun little detail when the script has been finished
