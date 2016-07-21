@@ -62,6 +62,8 @@ brew cask install nylas-n1 # Mail client
 
 brew cask install seil # Keymapper for mac
 
+brew cask install flux # it makes the color of your computer's display adapt to the time of day, warm at night and like sunlight during the day
+
 # Setup vim rc file
 git clone -b personal https://github.com/LasseHaslev/ultimate-vimrc.git ~/.vim/runtime
 sh ~/.vim/runtime/install.sh
