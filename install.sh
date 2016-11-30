@@ -19,6 +19,7 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 
 # Then install homebrew cask
 brew tap caskroom/cask
+brew update
 brew install caskroom/cask/brew-cask
 
 # Install git first because cask needs git
@@ -88,6 +89,9 @@ git clone https://github.com/laravel/homestead.git Homestead
 cd ~/Homestead
 bash ./init.sh
 cd ~
+
+# Add new package manager for npm 
+brew install yarn
 
 # Install composer
 php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
