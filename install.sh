@@ -64,8 +64,6 @@ brew cask install seil # Keymapper for mac
 
 brew cask install flux # it makes the color of your computer's display adapt to the time of day, warm at night and like sunlight during the day
 
-brew cask install fluid # Turn Your Favorite Web Apps into Real Mac Apps.
-
 # Setup vim rc file
 git clone -b personal https://github.com/LasseHaslev/ultimate-vimrc.git ~/.vim/runtime
 sh ~/.vim/runtime/install.sh
@@ -74,6 +72,9 @@ sh ~/.vim/runtime/install.sh
 npm install --global gulp-cli # Javascript task manager
 brew install ctags # Brows like a pro with ctags
 brew install the_silver_searcher # Searching with ag
+
+# Nativeifier 
+npm install nativefier -g
 
 # Setup git
 git config --global user.name $name
