@@ -95,6 +95,10 @@ php composer-setup.php
 php -r "unlink('composer-setup.php');"
 mv composer.phar /usr/local/bin/composer # Move composer so we can only type"composer" to run composer
 
+# laravel installer "laravel new {project name}
+composer global require "laravel/installer"
+
+
 # A fun little detail when the script has been finished
 say -v whisper "It has been done"
 
