@@ -65,6 +65,8 @@ brew cask install seil # Keymapper for mac
 
 brew cask install flux # it makes the color of your computer's display adapt to the time of day, warm at night and like sunlight during the day
 
+brew cask install kap # Screen recorder
+
 # Setup vim rc file
 git clone -b personal https://github.com/LasseHaslev/ultimate-vimrc.git ~/.vim/runtime
 sh ~/.vim/runtime/install.sh
@@ -105,7 +107,6 @@ composer global require "laravel/installer"
 
 # install personal git-status
 npm install -g @lassehaslev/git-status
-
 
 # A fun little detail when the script has been finished
 say -v whisper "It has been done"
