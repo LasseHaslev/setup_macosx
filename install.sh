@@ -74,6 +74,15 @@ git config --global user.name $name
 git config --global user.email $email
 git config --global credential.helper osxkeychain # Tell Git to use sxkeychain helper using the global credential.helper config
 
+# Install PHP Upgrade dependencies
+brew tap homebrew/dupes
+brew tap homebrew/versions
+brew tap homebrew/homebrew-php
+
+# Install PHP 7.1
+brew unlink php70
+brew install php71
+
 # Install composer
 php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
 php -r "if (hash_file('SHA384', 'composer-setup.php') === 'aa96f26c2b67226a324c27919f1eb05f21c248b987e6195cad9690d5c1ff713d53020a02ac8c217dbf90a7eacc9d141d') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
