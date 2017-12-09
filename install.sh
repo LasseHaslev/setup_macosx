@@ -32,7 +32,6 @@ brew install tree # quickly view folder structure in terminal
 brew cask install google-chrome # Web browser
 brew cask install franz # Social messenger software
 brew cask install skype # Communication software
-brew cask install reeder # News reader
 brew cask install vlc # Video player
 brew cask install spotify # Music streaming
 brew cask install dropbox # SkyDrive file manager
@@ -55,15 +54,7 @@ brew cask install moom # Mac window organization
 brew cask install transmit # FTP client
 
 brew cask install sequel-pro # Graphical SQL client
-brew cask install livereload # Reloads browser when you change your files developing web apps
-brew cask install rescuetime # Monitor your activities
-brew cask install graphviz # Write graphs in dot
 brew cask install textwrangler # Texteditor with GREP posibilities
-brew cask install nylas-n1 # Mail client
-
-brew cask install seil # Keymapper for mac
-
-brew cask install flux # it makes the color of your computer's display adapt to the time of day, warm at night and like sunlight during the day
 
 brew cask install kap # Screen recorder
 
@@ -72,7 +63,6 @@ git clone -b personal https://github.com/LasseHaslev/ultimate-vimrc.git ~/.vim/r
 sh ~/.vim/runtime/install.sh
 
 # Install npm Dependencies
-npm install --global gulp-cli # Javascript task manager
 brew install ctags # Brows like a pro with ctags
 brew install the_silver_searcher # Searching with ag
 
@@ -83,17 +73,6 @@ npm install nativefier -g
 git config --global user.name $name
 git config --global user.email $email
 git config --global credential.helper osxkeychain # Tell Git to use sxkeychain helper using the global credential.helper config
-
-# Add homestead
-vagrant box add laravel/homestead
-cd ~
-git clone https://github.com/laravel/homestead.git Homestead
-cd ~/Homestead
-bash ./init.sh
-cd ~
-
-# Add new package manager for npm 
-brew install yarn
 
 # Install composer
 php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
