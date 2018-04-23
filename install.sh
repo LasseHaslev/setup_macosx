@@ -65,11 +65,11 @@ git config --global user.email $email
 git config --global credential.helper osxkeychain # Tell Git to use sxkeychain helper using the global credential.helper config
 
 # Global gitignore files
-echo "npm-debug.log" >> ~/.gitignore
-echo ".DS_Store" >> ~/.gitignore
-echo "*~" >> ~/.gitignore #vi
-echo "tags" >> ~/.gitignore # ctags
-git config --global core.excludesfile %USERPROFILE%\.gitignore
+echo "npm-debug.log" >> ~/.gitignore_global
+echo ".DS_Store" >> ~/.gitignore_global
+echo "*~" >> ~/.gitignore_global #vi
+echo "tags" >> ~/.gitignore_global # ctags
+git config --global core.excludesfile ~/.gitignore_global
 
 # Install composer
 brew install composer
