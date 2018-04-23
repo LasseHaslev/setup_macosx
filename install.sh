@@ -27,10 +27,8 @@ brew install git # Git repositories
 brew install npm # Package manager for javascript
 
 brew install wget # Install wget
-brew install tree # quickly view folder structure in terminal
 
 brew cask install google-chrome # Web browser
-brew cask install franz # Social messenger software
 brew cask install skype # Communication software
 brew cask install vlc # Video player
 brew cask install spotify # Music streaming
@@ -38,16 +36,15 @@ brew cask install dropbox # SkyDrive file manager
 
 brew cask install dash # Gode documentation
 brew cask install iterm2 # A better terminal for Mac
-brew cask install alfred # A better terminal for Mac
+brew cask install alfred # Productivity tool for mac
 brew cask install caffeine # Prevent mac from sleeping
 
 brew cask install vagrant # Virtual mashine
-brew cask install virtualbox # Prevent mac from sleeping
+brew cask install virtualbox # Virtial mashine custom
 
 brew cask install slack # Team communication
 brew cask install 1password # Password manager
 
-brew cask install mindnode-pro # Mind mapping software
 brew cask install macvim # VIM Text editor for mac
 brew cask install moom # Mac window organization
 
@@ -66,29 +63,29 @@ sh ~/.vim/runtime/install.sh
 brew install ctags # Brows like a pro with ctags
 brew install the_silver_searcher # Searching with ag
 
-# Nativeifier 
-npm install nativefier -g
-
 # Setup git
 git config --global user.name $name
 git config --global user.email $email
 git config --global credential.helper osxkeychain # Tell Git to use sxkeychain helper using the global credential.helper config
 
-# Install PHP Upgrade dependencies
-brew tap homebrew/dupes
-brew tap homebrew/versions
-brew tap homebrew/homebrew-php
-
-# Install PHP 7.1
-brew unlink php70
-brew install php71
+# Global gitignore files
+echo "npm-debug.log" >> ~/.gitignore
+echo ".DS_Store" >> ~/.gitignore
+echo "*~" >> ~/.gitignore #vi
+echo "tags" >> ~/.gitignore # ctags
+git config --global core.excludesfile %USERPROFILE%\.gitignore
 
 # Install composer
-php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
-php -r "if (hash_file('SHA384', 'composer-setup.php') === 'aa96f26c2b67226a324c27919f1eb05f21c248b987e6195cad9690d5c1ff713d53020a02ac8c217dbf90a7eacc9d141d') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
-php composer-setup.php
-php -r "unlink('composer-setup.php');"
-mv composer.phar /usr/local/bin/composer # Move composer so we can only type"composer" to run composer
+brew install composer
+
+# Install PHP and Laravel valet
+brew install homebrew/core/php
+
+# Install Laravel Valet
+composer global require laravel/valet
+valet install
+brew install mysql
+brew services start mysql
 
 # laravel installer "laravel new {project name}
 composer global require "laravel/installer"
