@@ -56,7 +56,7 @@ brew cask install textwrangler # Texteditor with GREP posibilities
 brew cask install kap # Screen recorder
 
 # Setup vim rc file
-git clone -b personal https://github.com/LasseHaslev/ultimate-vimrc.git ~/.vim/runtime
+git clone https://github.com/LasseHaslev/ultimate-vimrc.git ~/.vim/runtime
 sh ~/.vim/runtime/install.sh
 
 # Setup git
