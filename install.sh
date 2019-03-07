@@ -30,34 +30,36 @@ brew install wget # Install wget
 
 brew cask install google-chrome # Web browser
 brew cask install skype # Communication software
-brew cask install vlc # Video player
+# brew cask install vlc # Video player
 brew cask install spotify # Music streaming
 brew cask install dropbox # SkyDrive file manager
 
-brew cask install dash # Gode documentation
+# brew cask install dash # Gode documentation
 brew cask install iterm2 # A better terminal for Mac
-brew cask install alfred # Productivity tool for mac
+
+# brew cask install alfred # Productivity tool for mac
 brew cask install caffeine # Prevent mac from sleeping
 
-brew cask install vagrant # Virtual mashine
-brew cask install virtualbox # Virtial mashine custom
+# brew cask install vagrant # Virtual mashine
+# brew cask install virtualbox # Virtial mashine custom
 
 brew cask install slack # Team communication
-brew cask install 1password # Password manager
 
 brew cask install macvim # VIM Text editor for mac
-brew cask install moom # Mac window organization
-
-brew cask install transmit # FTP client
-
 brew cask install sequel-pro # Graphical SQL client
-brew cask install textwrangler # Texteditor with GREP posibilities
 
 brew cask install kap # Screen recorder
 
 # Setup vim rc file
 git clone https://github.com/LasseHaslev/ultimate-vimrc.git ~/.vim/runtime
 sh ~/.vim/runtime/install.sh
+
+# Install mac appstore CLI
+brew install mas
+mas install 443987910 # 1Password (6.8.8)
+mas install 419330170 # Moom (3.2.14)
+mas install 403388562 # Transmit (4.4.13)
+mas install 404010395 # TextWrangler (5.5.2)
 
 # Setup git
 git config --global user.name $name
@@ -75,13 +77,14 @@ git config --global core.excludesfile ~/.gitignore_global
 brew install composer
 
 # Install PHP and Laravel valet
-brew install homebrew/core/php
+brew install php
 
 # Install Laravel Valet
 composer global require laravel/valet
 valet install
-brew install mysql
-brew services start mysql
+# Install mysql
+brew install mysql@5.7
+brew services start mysql@5.7
 
 # laravel installer "laravel new {project name}
 composer global require "laravel/installer"
