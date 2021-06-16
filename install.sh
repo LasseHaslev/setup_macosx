@@ -18,9 +18,7 @@ ssh-add ~/.ssh/id_rsa
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # Then install homebrew cask
-brew tap caskroom/cask
 brew update
-brew install caskroom/cask/brew-cask
 
 # Install git first because cask needs git
 brew install git # Git repositories
@@ -28,27 +26,27 @@ brew install npm # Package manager for javascript
 
 brew install wget # Install wget
 
-brew cask install google-chrome # Web browser
-brew cask install skype # Communication software
-# brew cask install vlc # Video player
-brew cask install spotify # Music streaming
-brew cask install dropbox # SkyDrive file manager
+brew install --cask google-chrome # Web browser
+# brew install --cask skype # Communication software
+# brew install --cask vlc # Video player
+brew install --cask spotify # Music streaming
+brew install --cask dropbox # SkyDrive file manager
 
-# brew cask install dash # Gode documentation
-brew cask install iterm2 # A better terminal for Mac
+# brew install --cask dash # Gode documentation
+brew install --cask iterm2 # A better terminal for Mac
 
-# brew cask install alfred # Productivity tool for mac
-brew cask install caffeine # Prevent mac from sleeping
+# brew install --cask alfred # Productivity tool for mac
+brew install --cask caffeine # Prevent mac from sleeping
 
-# brew cask install vagrant # Virtual mashine
-# brew cask install virtualbox # Virtial mashine custom
+# brew install --cask vagrant # Virtual mashine
+# brew install --cask virtualbox # Virtial mashine custom
 
-brew cask install slack # Team communication
+brew install --cask slack # Team communication
 
-brew cask install macvim # VIM Text editor for mac
-brew cask install sequel-pro # Graphical SQL client
+brew install --cask macvim # VIM Text editor for mac
+brew install --cask sequel-pro # Graphical SQL client
 
-brew cask install kap # Screen recorder
+brew install --cask kap # Screen recorder
 
 # Setup vim rc file
 git clone https://github.com/LasseHaslev/ultimate-vimrc.git ~/.vim/runtime
