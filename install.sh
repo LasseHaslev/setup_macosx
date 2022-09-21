@@ -49,6 +49,7 @@ brew install --cask iterm2 # A better terminal for Mac
 # brew install --cask slack # Team communication
 
 # brew install --cask kap # Screen recorder
+brew install --cask bitwarden # Desktop password and login vault
 
 # Setup vim rc file
 # brew install --cask macvim # VIM Text editor for mac
