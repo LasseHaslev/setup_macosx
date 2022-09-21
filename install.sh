@@ -11,7 +11,7 @@ ssh-keygen -t rsa -b 4096 -C $email
 
 # Adding your SSH key to the ssh-agent
 eval "$(ssh-agent -s)"
-ssh-add ~/.ssh/id_rsa
+ssh-add ~/.ssh/id_rsa --apple-use-keychain
 
 # --- Install Programs --- #
 # Setup homebrew
@@ -24,7 +24,8 @@ brew update
 brew install git # Git repositories
 git config --global user.name $name
 git config --global user.email $email
-git config --global credential.helper osxkeychain # Tell Git to use sxkeychain helper using the global credential.helper config
+brew install gh #github cli
+gh auth login
 
 # Global gitignore files
 echo "npm-debug.log" >> ~/.gitignore_global
