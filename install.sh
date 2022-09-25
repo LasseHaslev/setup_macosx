@@ -43,7 +43,7 @@ brew install --cask spotify # Music streaming
 # brew install --cask dropbox # SkyDrive file manager
 
 # brew install --cask dash # Gode documentation
-brew install --cask iterm2 # A better terminal for Mac
+brew install --cask warp # A better terminal for Mac
 
 # brew install --cask caffeine # Prevent mac from sleeping
 
